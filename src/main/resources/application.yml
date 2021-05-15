@@ -1,9 +1,12 @@
 server:
-  servlet:
-    context-path: /api
+  error:
+    include-message: always
 app:
   datasource:
     jdbc-url: jdbc:postgresql://localhost:5432/fullstack
     username: postgres
     password: creampie09
     pool-size: 30
+spring:
+      flyway:
+        baselineOnMigrate: true
